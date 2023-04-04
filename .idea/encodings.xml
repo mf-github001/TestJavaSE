@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf/TestFor13.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf2/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf3/mf2/Person.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP/src/com/mf3/mf2/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/TestOP4/src/com/mf/test08/TestOuter.java" charset="UTF-8" />
+  </component>
+</project>

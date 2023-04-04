@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<article class="post-content" id="article-container"><h1 id="MarkdomnPreview"><a href="#MarkdomnPreview" class="headerlink" title="MarkdomnPreview"></a>MarkdomnPreview</h1><p>利用快捷键在浏览器中预览Markdown文件，设置方法：  </p>
+    <ol>
+        <li>利用组合键<code>Ctrl+Shift+P</code>调出命令面板;</li>
+        <li>输入<code>Package Control: Install Package</code>,按下回车后在搜索框中输入<code>MarkdomnPreview</code>，等待安装成功；</li>
+        <li>在命令面板中输入<code>Markdown Preview： Preview in Browser</code>并选中，在出现的选项中任选<code>github</code>或<code>markdown</code>其一，其中：  <ol>
+            <li>github是利用GitHub的在线API来解析.md文件，支持在线资源的预览；</li>
+            <li>markdown就是传统的本地默认浏览器中显示预览结果，不支持在线资源的预览；</li>
+        </ol>
+        </li>
+        <li>自定义预览快捷键，在<code>Preferences -&gt; Key Bindings</code>打开的文件右侧栏的中括号中添加如下代码，其中<code>alt+q</code>可以设置为任意按键；<br><code>{ "keys": ["alt+q"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"}  }</code></li>
+    </ol>
+    <h1 id="MarkdomnPreview-LiveReload实时刷新预览"><a href="#MarkdomnPreview-LiveReload实时刷新预览" class="headerlink" title="MarkdomnPreview + LiveReload实时刷新预览"></a>MarkdomnPreview + LiveReload实时刷新预览</h1><p>设置方法：  </p>
+    <ol>
+        <li>参照1中方法安装MarkdownPreview插件，打开配置文件<code>Preferences -&gt; Package Settings -&gt; Markdown Preview -&gt; Settings</code>，检查左侧<code>enable_autoreload</code>条目是否为true。若是则跳过，若不是，在右侧栏中添加下列代码后重启Sublime Text：<pre class="line-numbers language-none"><code class="language-none">{
+    "enable_autoreload": true
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+        <li>安装LiveReload插件；  </li>
+        <li>配置LiveReload插件：  <ol>
+            <li>利用组合键<code>Ctrl+Shift+P</code>调出命令面板，输入<code>LiveReload: Enable/disable plug-ins</code>, 按下回车后选择<code>Simple Reload with delay (400ms)</code>或者<code>Simple Reload</code>（没有延迟）；  </li>
+            <li>打开配置文件<code>Preferences-package Settings-liveReload-settings user</code>,在右侧栏中添加下列代码后重启Sublime Text：  </li>
+            <li><code>{"enabled_plugins": ["SimpleReloadPlugin", "SimpleRefresh"]}</code></li>
+        </ol>
+        </li>
+    </ol>
+</article>
+</body>
+</html>
